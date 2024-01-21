@@ -1,13 +1,23 @@
-# Programmation C
+# Programmation C - Correction d'Examen Final
 
-<p>Bonjour!</p>
+Bienvenue, les étudiants!
 
-<p>J'ai corrigé l'examen final de Programmation C pour les étudiants de <b><i>L2-Informatique UGE</b></i>.</p>
-<p>Mon objectif principal est de vous aider à comprendre la manière dont il aurait fallu procéder.</p>
-<p>Bien que l'examen ait duré 2 heures, j'ai pris 4 heures pour effectuer la correction et fournir des explications détaillées avec des commentaires.</p>
-<p>En d'autres termes, vous avez la possibilité de prendre ce code, le modifier, l'utiliser, etc...</p>
-<p>Pour commpiler vous pouvez écrire: ```clang -std=c17 -Wall -Wfatal-errors -pedantic fichier.c -o fichier```</p>
+## Aperçu
 
-<p>J'espère que cette correction vous sera utile et contribuera à votre amélioration.</p><br>
+J'ai corrigé l'examen final de Programmation C destiné aux étudiants de **L2-Informatique UGE**.
 
-<p>Bonne courage.</p>
+L'objectif principal de cette correction est de vous aider à comprendre la méthodologie que vous auriez dû suivre.
+
+Bien que la durée de l'examen ait été de 2 heures, j'ai consacré 4 heures à la correction, fournissant des explications détaillées avec des commentaires pour faciliter votre compréhension.
+
+En d'autres termes, vous avez toute latitude pour prendre ce code, le modifier selon vos besoins et l'utiliser dans vos projets.
+
+## Compilation
+
+Pour compiler le code, vous pouvez utiliser la commande suivante dans votre terminal:
+
+```bash
+clang -std=c17 -Wall -Wfatal-errors -pedantic fichier.c -o fichier
+```
+
+Bien entendu, si vous constatez un bug ou une erreur, contactez-moi et je le corrigerai dans les plus brefs délais.
