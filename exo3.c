@@ -184,7 +184,6 @@ void affiche_table(Table T)
 {
     for (int i = 0; i < TAILLE; ++i) {
             affiche(T[i]);
-        }
     }
 }
 
@@ -193,8 +192,7 @@ void affiche_table(Table T)
 Maillon *recherche(Table T, Cle c)
 {
     for (int i = 0; i < TAILLE; ++i){
-        Liste courant = T[i];
-        Maillon *maillon = trouve(courant, c);
+        Maillon *maillon = trouve(T[i], c);
 
         // si maillon n'est pas NULL donc on l'a trouve
         if (maillon) { return maillon; }
