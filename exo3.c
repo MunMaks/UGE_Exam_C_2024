@@ -183,14 +183,7 @@ void initialise_table(Table T)
 void affiche_table(Table T)
 {
     for (int i = 0; i < TAILLE; ++i) {
-        printf("Table[%d]: ", i);
-
-        // Affiche la liste chaînée associée à l'index i
-        if (T[i] == NULL) {
-            printf("[LISTE VIDE]\n");
-        } else {
-            Liste courant = T[i];
-            affiche(courant);
+            affiche(T[i]);
         }
     }
 }
