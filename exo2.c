@@ -70,10 +70,7 @@ Client * init_client(char *id, int age, Date d){
 
     strcpy(new_cli->id, id);
     new_cli->age = age;
-    new_cli->d.jour = d.jour;
-    new_cli->d.mois = d.mois;
-    new_cli->d.annee = d.annee;
-    
+    new_cli->d = d;
     return new_cli;
 }
 
