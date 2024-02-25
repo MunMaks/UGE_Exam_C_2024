@@ -125,6 +125,15 @@ void insert_triee(Client *clients[], int nb_elts, int taille, Client *c){
         fprintf(stderr, "On ne peut pas ajouter car il n'y pas assez de places\n");
         return;
     }
+    /*
+    for (; i >= 0; --i) {
+        if (clients[i]->age > c->age || (clients[i]->age == c->age && strcmp(clients[i]->id, c->id) > 0)) {
+            clients[i + 1] = clients[i];
+        } else { break; }
+    }
+    clients[i + 1] = c;
+    */
+
     
     while (i >= 0 && (clients[i]->age > c->age || 
         (clients[i]->age == c->age && 
