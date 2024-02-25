@@ -120,13 +120,15 @@ void affiche_clientele(Clientele *c){
 void insert_triee(Client *clients[], int nb_elts, int taille, Client *c){
     if (!c){ fprintf(stderr, "client est NULL\n"); }   // normalement c'est pas possible, mais pourquoi pas
 
-    int i = nb_elts - -1;
+    int i = nb_elts - 1;
     if (nb_elts >= taille){
         fprintf(stderr, "On ne peut pas ajouter car il n'y pas assez de places\n");
         return;
     }
     
-    while (i >= 0 && (clients[i]->age > c->age || (clients[i]->age == c->age && strcmp(clients[i]->id, c->id) > 0)) ) {
+    while (i >= 0 && (clients[i]->age > c->age || 
+        (clients[i]->age == c->age && 
+        strcmp(clients[i]->id, c->id) > 0)) ) {
         
         clients[i + 1] = clients[i];
         --i;
